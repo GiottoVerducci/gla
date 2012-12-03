@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BC989C8-6672-4442-9CF9-1A7DB7163C7B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GLA</RootNamespace>
+    <AssemblyName>GLA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Open XML SDK\V2.0\lib\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\LAG\ThirdPartyDependencies\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\LAG\ThirdPartyDependencies\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>..\LAG\ThirdPartyDependencies\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\LAG\Business\Army.cs">
+      <Link>Business\Army.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\ArmyPart.cs">
+      <Link>Business\ArmyPart.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Artifact.cs">
+      <Link>Business\Artifact.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Capacity.cs">
+      <Link>Business\Capacity.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Faction.cs">
+      <Link>Business\Faction.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\FactionCombattantElement.cs">
+      <Link>Business\FactionCombattantElement.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\FactionElement.cs">
+      <Link>Business\FactionElement.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Miracle.cs">
+      <Link>Business\Miracle.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Peuple.cs">
+      <Link>Business\Peuple.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Rank.cs">
+      <Link>Business\Rank.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Reference.cs">
+      <Link>Business\Reference.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Size.cs">
+      <Link>Business\Size.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Special.cs">
+      <Link>Business\Special.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Spell.cs">
+      <Link>Business\Spell.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\Unit.cs">
+      <Link>Business\Unit.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\UnitArtifactLink.cs">
+      <Link>Business\UnitArtifactLink.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\UnitCapacityLink.cs">
+      <Link>Business\UnitCapacityLink.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\UnitMiracleLink.cs">
+      <Link>Business\UnitMiracleLink.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Business\UnitSpellLink.cs">
+      <Link>Business\UnitSpellLink.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\DataLoader\ExcelDataAttribute.cs">
+      <Link>DataLoader\ExcelDataAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\DataLoader\ExcelLoader.cs">
+      <Link>DataLoader\ExcelLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\DataLoader\SheetDataLoader.cs">
+      <Link>DataLoader\SheetDataLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Helper\Helper.cs">
+      <Link>Helper\Helper.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Pdf\ColumnManager.cs">
+      <Link>Pdf\ColumnManager.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Pdf\Pdf.cs">
+      <Link>Pdf\Pdf.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Pdf\PdfFooterHelper.cs">
+      <Link>Pdf\PdfFooterHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\LAG\Warnings.cs">
+      <Link>Warnings.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\LAG\Pdf\casablanca-antique-plain.ttf">
+      <Link>Pdf\casablanca-antique-plain.ttf</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\LAG\Pdf\CasablancaAntique-Bold.ttf">
+      <Link>Pdf\CasablancaAntique-Bold.ttf</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\LAG\Pdf\itc-goudy-sans-lt-bold-italic.ttf">
+      <Link>Pdf\itc-goudy-sans-lt-bold-italic.ttf</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\LAG\Pdf\itc-goudy-sans-lt-bold.ttf">
+      <Link>Pdf\itc-goudy-sans-lt-bold.ttf</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\LAG\Pdf\itc-goudy-sans-lt-medium-italic.ttf">
+      <Link>Pdf\itc-goudy-sans-lt-medium-italic.ttf</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\LAG\Pdf\itc-goudy-sans-lt-medium.ttf">
+      <Link>Pdf\itc-goudy-sans-lt-medium.ttf</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
