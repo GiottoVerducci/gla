@@ -120,6 +120,11 @@ namespace GLA
         {
             get
             {
+                if (string.IsNullOrEmpty(_competences))
+                {
+                    Warnings.Add("_competence is null or empty for {0} ({1})", FullName, Id);
+                    _competences = "-";
+                }
                 var competences = _competences
                     .Split('(', ')')
                     .Select(t => t.Trim().Replace(".", null).Trim())
