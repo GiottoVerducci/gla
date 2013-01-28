@@ -31,6 +31,7 @@ namespace GLA
 
             foreach (var line in Warnings.GetSummary())
                 Console.WriteLine(line);
+            Warnings.Clear();
 
             var modificationDate = File.GetLastWriteTime(filename);
 
@@ -55,7 +56,10 @@ namespace GLA
             {
                 var headerLeft = FormatProperty("Livre d'armée " + army.Key._name, modificationDate);
                 Pdf.Write(army.Value, army.Key, arguments.OutputFileName + army.Key._name + ".pdf", footer, headerLeft, headerRight, watermarkPath, watermarkOpacity);
-                break;
+                //break;
+                foreach (var line in Warnings.GetSummary())
+                    Console.WriteLine(line);
+                Warnings.Clear();
             }
         }
 

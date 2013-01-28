@@ -12,7 +12,7 @@ namespace GLA
 
         public override void Resolve()
         {
-            var referer = string.Format("Lien Figurine-Artefact ({0})", this.Id);
+            var referer = "Lien Figurine-Artefact ({0})";
             var unit = new Reference<Unit>(Convert.ToInt32(_unitId));
             unit.ResolveReference(Army.Units, referer);
             var artefact = new Reference<Artifact>(Convert.ToInt32(_artefactId));
