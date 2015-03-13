@@ -1,0 +1,1 @@
+Générateur de livre d'armée pour Confrontation
